@@ -1,16 +1,16 @@
 ---
-layout: lesson
+layout: course
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
-FIXME: home page introduction
-
-<!-- this is an html comment -->
-
-{% comment %} This is a comment in Liquid {% endcomment %}
 
 > ## Instructor
 >
+> - **Instructor**: Linh B. Ngo, Ph.D.
+> - **Office**: Room 138, 25 University Avenue (UNA building)
+> - **Office Hours**: TBD
+> - **Email**: lngo AT wcupa DOT edu
+> - **Phone**: 610-436-2595 (don't call, email)
 >
 {: .prereq}
 
@@ -24,8 +24,7 @@ FIXME: home page introduction
 > ### Student Learning Objectives:
 > - SLO1
 >
-> ### General Education Learning Objectives:
-> - GELO1
+> ### General Education Learning Objectives: Science Distributive
 >
 > ### Alignment of Course to General Education Goals:
 > - Alignment 1
@@ -44,17 +43,17 @@ FIXME: home page introduction
 > Gaddis and Muganda, 4th Edition, Pearson. ISBN-13: 780134787961 (print)
 {: .callout}
 
-> ## Evaluation Policy:
+> ## Grade:
 >
 > ### Grade Distributions
 >
 > | Percentage | Tasks |
 > | ---------- | ----- |
-> | 20% | Homework Sets (approximately 4-5 homework sets) |
-> | 15% | Labs (approximately biweekly labs) |
-> | 5% | Problets (online practice exercises) |
-> | 45% | Three Midterm Exams (15% each) |
-> | 15% | Final Exam |
+> | 40% | Homework Sets (approximately 4-5 homework sets) |
+> | 20% | Labs (4 labs) |
+> | 20% | Quizzes |
+> | 10% | Midterm Exam |
+> | 10% | Final Exam |
 >
 > ### Grade Scale:
 >
@@ -74,8 +73,8 @@ FIXME: home page introduction
 > | <= 59	| F |
 >
 > ### Lateness Policy:
-> Assignments that are late are assessed a 10% per day late penalty.
-> Saturday and Sunday are each days.
+> Given the shortened duration of summer semesters, no late work will
+> be accepted.
 {: .keypoints}
 
 

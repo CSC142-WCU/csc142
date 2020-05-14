@@ -1,7 +1,7 @@
 ---
-title: "Introduction"
-teaching: 0
-exercises: 0
+title: "More Advanced Topics Relating to Classes"
+teaching: 20
+exercises: 20
 questions:
 - "Key question (FIXME)"
 objectives:
@@ -12,4 +12,3 @@ keypoints:
 FIXME
 
 {% include links.md %}
-
