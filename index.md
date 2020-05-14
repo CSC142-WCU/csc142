@@ -119,18 +119,18 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 >
 > Please abide by the following email etiquette policies to ensure clear
 > communication:
-> - Subject Line:	Please include a descriptive and specific subject heading for
+> - **Subject Line**:	Please include a descriptive and specific subject heading for
 > all of your emails, including course and section number (e.g. “CSC 050-23:
 > Question about lab 1”).
-> - Greeting:	Please make a clear and appropriate greeting; I will not answer
+> - **Greeting**:	Please make a clear and appropriate greeting; I will not answer
 > emails addressed to “hey” or “yo”. Please address me as Dr. Ngo, or “Professor”.
-> - Tone & Style:	Always use a tone and language that is appropriate to an
+> - **Tone & Style**:	Always use a tone and language that is appropriate to an
 > academic setting; I will not respond to emails that are written in short-hand
 > or without proper punctuation and grammar. Your emails should not resemble a
 > text message.
-> - Sign and Proofread:	Always sign your full name, especially if you are
+> - **Sign and Proofread**:	Always sign your full name, especially if you are
 > writing from your smart phone. Always proofread your emails before sending.
-> - Email Account:	I do not care which email account you send email from, as
+> - **Email Account**:	I do not care which email account you send email from, as
 > long as it is clearly addressed and signed so that I know who you are. But
 > please be advised to appropriately link the email that you wish to use with
 > myWCU and D2L; I will be using those services to send out emails to the
@@ -139,17 +139,17 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 >
 > ### Computer Science Department Dishonesty Policy:
 > The Computer Science Committee has adopted the following policies in regard
-> to > academic dishonesty in Computer Science classes:
+> to academic dishonesty in Computer Science classes:
 > 1. A student found to be academically dishonest in an assignment will receive
-> zero for that assignment if it is his/her first offense in that class [the
-> course, not the class period], but an F for the course if it is for his/her
-> second offense in that class [the course].  
+> zero for that assignment if it is his/her first offense in that class, 
+> but an F for the course if it is for his/her
+> second offense in that class.  
 > 2. A student found to be academically dishonest in a test will receive the
-> grade of F in that class [the course].
+> grade of F in that class.
 > 3. For the purposes of this document on academic dishonesty, every form or
 > method of evaluation in a class will be considered as being of one of two
 > types: an assignment or a test. Assignments include homework assignments, and
-> short quizzes [and labs]. Tests include final exams and major exams. An
+> short quizzes, and labs. Tests include final exams and major exams. An
 > instructor has, subject to these guidelines, the discretion to determine the
 > type of any other form of evaluation, such as a project, in his/her class.
 > 4. A student who has received the grade of F in a course because of academic
@@ -160,17 +160,17 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 > Science Committee, and only then on a case by case basis.
 > 5. The term academic dishonesty is used throughout in the sense provided by
 > the rules and regulations of West Chester University. The following is taken
-> from The Ram's Eye View of 1997-1998: “Academic dishonesty as it applies to
+> from The Ram's Eye View of 1997-1998: **“Academic dishonesty as it applies to
 > students includes but is not limited to academic cheating; plagiarism; the
 > sale, purchase, or exchange of term papers or research papers; falsification
 > of information which includes any form of providing false or misleading
 > information, written, electronic, or oral; or of altering or falsifying
 > official institutional records. Plagiarism is defined as copying another's
 > work or portion thereof and/or using ideas and concepts of another and
-> presenting them as one's own without giving proper credit to the source.”
+> presenting them as one's own without giving proper credit to the source.”**
 >
-> ### No-Grade, violation of academic integrity, and violation of student code
-> of conduct Policy:
+> ### No-Grade, Violation of Academic Integrity, and Violation of Student Code
+> of Conduct Policy:
 > For questions regarding Academic Dishonesty, the No-Grade policy, Sexual
 > Harassment, or the Student Code of Conduct, students are encouraged to refer
 > to their major department’s handbook, the Undergraduate Course Catalogue, the
@@ -187,8 +187,8 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 > with Disabilities(OSSD), please contact the OSSD which is located at 223
 > Lawrence Center. The OSSD hours of Operation are
 > Monday – Friday 8:30 a.m. – 4:30 p.m. Their phone number is 610-436-2564,
-> fax number is 610-436-2600, and their email address is ossd@wcupa.edu.
-> More information can be found at the OSSD website.  
+> fax number is 610-436-2600, and their email address is [ossd@wcupa.edu](ossd@wcupa.edu).
+> More information can be found at [OSSD website](http://www.wcupa.edu/ussss/ossd).  
 >
 > ### Title IX Statement:
 > West Chester University and its faculty are committed to assuring a safe and
@@ -205,8 +205,8 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 > child (a person under 18 years of age) when the abuse allegedly occurred to
 > the person designated in the University protection of minors policy.  
 > Information regarding the reporting of sexual violence and the resources
-> that are available to victims of sexual violence is set forth at the webpage
-> for the Office of Social Equity.
+> that are available to victims of sexual violence is set forth at the
+> [Office of Social Equity website](http://www.wcupa.edu/_admin/social.equity).
 >
 > ### Emergency Contact:
 > In the event of an emergency during class, the phone number for WCU’s
