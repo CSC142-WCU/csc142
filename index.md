@@ -15,21 +15,45 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {: .prereq}
 
 > ## Course Description
-> Course description goes here
+> This course introduces the design and implementation of classes and objects, 
+> arrays using primitive types and Strings, array of objects, sorting and searching 
+> through arrays, recursion, aggregate objects and an introduction to 
+> Graphical User Interfaces (GUIs).
 >
 {: .prereq}
 
 > ## Learning Objectives:
 >
 > ### Student Learning Objectives:
-> - SLO1
+> - Understand basic object oriented (OO) concepts
+> - Know how to design and develop programs using classes
+> - Understand and write programs using arrays of both one dimension and two dimensions
+> - Understand the concept of recursion and write simple programs that involve recursion
+> - Understand GUI programming
+> - Write well documented and efficient programs
 >
 > ### General Education Learning Objectives: Science Distributive
+> 1. Communicate effectively.
+> 2. Employ quantitative analysis and mathematical methods.
+> 3. Think critically and analytically.
 >
 > ### Alignment of Course to General Education Goals:
-> - Alignment 1
+> - Alignment 1:
+>   - Plan program solutions using pseudo-code.
+>   - Write program solutions using the Java programming language.
+>   - Document code with appropriate explanatory information.
+> - Alignment 2:
+>   - Analyze problem situations.
+>   - Use mathematical models to develop solutions.
+> - Alignment 3:
+>   - Develop algorithmic solutions.
+>   - Implement and test problem solutions.
 >
 > ### Artifacts used to demonstrate Student Learning Outcomes:
+> - Homework Sets
+> - Labs
+> - Quizzes
+> - Exams
 >
 {: .objectives}
 
