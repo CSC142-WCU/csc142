@@ -1,5 +1,5 @@
 ---
-title: "Introduction to classes"
+title: "Introduction to Java classes"
 teaching: 20
 exercises: 20
 questions:
