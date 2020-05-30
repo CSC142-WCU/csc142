@@ -83,7 +83,7 @@ the only output resulting from `callNumber`.
 <img src="../fig/CellPhoneOneMain.png" alt="Compile and run CellPhoneOneMain" style="height:150px">
 
 The above programs are not really useful (or sensible) for a number of reasons. Aside from the fact that there
-are way to few attributes and functionalities, one non-sensicle item is the fact that the external program (*CellPhoneOneMain*)
+are way to few attributes and functionalities, one item that does not make sense is the fact that the external program (*CellPhoneOneMain*)
 can modify the attributes such as dimensions and colors! From a common sense perspective, those attributes are
 fixed once a phone is created (**instantiated**). This brings us to our next lecture on Constructors, private versus public, 
 and static versus non-static. 
