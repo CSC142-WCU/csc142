@@ -5,7 +5,9 @@ exercises: 20
 questions:
 - "Key question (FIXME)"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understand the implication of public and private flags."
+- "Understand the usage of constructor in class definition."
+- 
 keypoints:
 - "First key point. Brief Answer to questions. (FIXME)"
 ---
@@ -60,8 +62,77 @@ The constructor contains codes that help initilizing the object's attributes.
 
 # Example
 
+The cell phone example is updated in `CellPhoneTwo.java`. In this example, all class attributes are 
+now private (lines 7 through 9). Line 16 through 20 defines the constructor for `CellPhoneTwo`. Within
+this constructor, the values for the class attributes are initialized. In lines 17 through 19, values on 
+the right side of the assignment sign (`=`) come from the constructor's arguments. These are values are
+assigned to the class attributes, which are on the left side of the assignment sign. Comparing to `CellPhoneOne`,
+`CellPhoneTwo` has four new methods: `setBrightness`,`getBrightness`,`getColor`, and `getDims`. These methods
+help manipulating and accessing values of `CellPhoneTwo`'s **private** attributes. Since the methods
+are all public methods, users can leverage these methods to interact with these attributes. 
 
+The four methods can be classified into two types: **assessor** and **mutator**. 
+- Assessor methods' names typically have the form `getXYZ` with `XYZ` is the name of the attribute 
+being accessed. Assessor methods will return the current value of the attribute being accessed. 
+Assessor methods do not take any argument, and the return types of assessor methods should be the same as 
+those of the attrubites being accessed. For example, `getColor` returns color (lines 42-44), `getDims` 
+returns dimension array (line 50-52), and `getBrightness` returns brightness (lines 34-36).  
+- Mutator methods' names typically have the form `setXYZ` with `XYZ` is the name of the attribute being
+modified (mutated). Mutator methods typically do not return anything (`void`) or return a `Boolean` 
+value to indicate whether the mutation process has been successful (`True`) or not (`False`). Mutator 
+methods require an argument of the same type as that of the attribute being modified/mutated. The value
+from this argument will be used to replace the current value of the attribute. In `CellPhoneTwo`, only 
+attribute *brightness* has a corresponding mutator methods (`setBrightness`, lines 26-28). This method requires an 
+argument of type integer (line 26). The value of this argument will then be assigned to attribute *brightness* 
+(line 27). Attributes *color* and *dims* are fixed after initial creation of a `CellPhoneTwo` object, so no
+mutator method is needed. 
 
-# Passing Objects as Arguments
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=CellPhoneTwo.java"></script>
+
+> ## Understanding assessors and mutators:
+> Determine whether any of the following statements is True or False
+>
+> 1. Assessor methods are used to modify the values of object's private attributes. 
+> 2. Mutator methods are used to return the values of object's private attributes. 
+> 3. All private attributes must have their corresponding assessor methods.
+> 4. All private attributes must have their corresponding mutator methods. 
+>
+> > ## Solution
+> >  1. False. Assessor methods are used to return the values of object's private attributes. 
+> >  2. False. Mutator methods are used to modify (mutate) the values of object's private attributes.  
+> >  3. False. Only private attributes need to be viewed/accessed from outside the object need to have assessor methods.  
+> >  4. False. Only private attributes need to be modified from outside the object need to have mutator methods.  
+> {: .solution}
+{: .challenge}
+
+We modify `CellPhoneOneMain.java` to create `CellPhoneTwoMain.java`. In this second version, the dimension array is created
+prior to the creation of the `CellPhoneTwo` object. This array and the **Red** string become parameters for `CellPhoneTwo`'s
+constructor (line 10). Line 11 through 15 show various usage of `CellPhoneTwo` assessors and mutators to interact with its 
+private attributes (*dimensions*, *color*, and *brightness*).
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=CellPhoneTwoMain.java"></script>
+
+The figure below presents the steps to compile and run `CellPhoneTwoMain.java` and the resulting outcomes. 
+
+<img src="../fig/CellPhoneTwo.png" alt="Compiling and running CellPhoneTwoMain.java" style="height:300px">
+
+> ## Observing errors from trying to interact with private attributes without using assessors or mutators:
+> A major goal of object-oriented programming is to provide isolation. In other words, this ensures the integrity of
+> the object and that internal information (attributes) should only be manipulated intentionally (via assessors and 
+> mutators) and not accidentally (via direct modification of public attributes). 
+>
+> In the following exercise, try modifying `CellPhoneTwoMain.java` to interact with the attributes directly. Observe
+> the errors. 
+> 
+> > ## Solution
+> > In this example, we try to access the *dims* private attribute directly instead of using an assessor (line 11). The 
+> > Java compiler recognizes this problem and prevents use from being able to compiled. It should be noted that there 
+> > are two errors reported since we try this direct access approach twice. From the screenshot, you can see how the 
+> > error indicators show two different errors on the same line (line 11).
+> >
+> >  <img src="../fig/CellPhoneTwoWrong.png" alt="Compiling and running CellPhoneTwoMainWrong.java" style="height:600px">
+> >  
+> {: .solution}
+{: .challenge}
 
 {% include links.md %}
