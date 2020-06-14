@@ -18,6 +18,7 @@ keypoints:
 # 8.5 Writing an equal methods
 # 8.6 Copy objects
 # 8.8 this Reference Variable
+# Packaging
 
 
 {% include links.md %}

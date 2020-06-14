@@ -1,18 +1,17 @@
 ---
-title: "Overloading and Packaging"
+title: "Overloading"
 teaching: 20
 exercises: 20
 questions:
-- "Key question (FIXME)"
+- "Can an object be instantiated if the value type does not match the constructor's requirements?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understand how overloading can help improve the versatility of classes."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Constructors and methods with the same name but different parameters can be declared inside 
+a class. This is called overloading."
 ---
-FIXME
 
 # 6.6 Overloading Methods and Constructors
 # 6.7 Scope of Instance Fields
-# 6.8 Packages and import Statements
 
 {% include links.md %}

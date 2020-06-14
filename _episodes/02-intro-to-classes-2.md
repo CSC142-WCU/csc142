@@ -5,12 +5,15 @@ exercises: 20
 questions:
 - "How to set initial values for object attributes at creation time?"
 - "Can all object attributes be accessed directly from outside?"
+- "Can a method be invoked with or with object instantiation?"
 objectives:
 - "Understand the implication of public and private flags."
 - "Understand the usage of constructor in class definition."
-- 
+- "Understand the implication of the static flag."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Initial values can be set for object attributes via constructors"
+- "Only public attributes can be accessed directly from outside, private attributes cannot."
+- "Static methods can be invoked without object instantiation."
 ---
 
 Let's revisit our CellPhoneOne code. From the previous lecture, we realize that
@@ -135,5 +138,17 @@ The figure below presents the steps to compile and run `CellPhoneTwoMain.java` a
 > >  
 > {: .solution}
 {: .challenge}
+
+## Static methods
+
+Methods within a class can either have a `static` in front of their names or not, immediately after 
+the `public`/`private` flag. A method with the `static` flag can be invoked without object
+ instantiation. For example, methods carrying out common mathematical calculation provided by Java's 
+ builtin Math class are all static. These methods can be found at [the page containing Math's source code](http://hg.openjdk.java.net/jdk8/jdk8/jdk/file/687fd7c7986d/src/share/classes/java/lang/Math.java).
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=SquareRoot.java"></script>
+
+In the above example, the `sqrt` method is invoked to calculate the square root of variable `x` that has a value of 16. Because this method belongs to the Math class, to invoke it, you will have to also specify the class that contains the method: `Math.sqrt(x)` (line 7). 
+
 
 {% include links.md %}
