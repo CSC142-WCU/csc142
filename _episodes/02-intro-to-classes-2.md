@@ -3,7 +3,8 @@ title: "Constructors, public versus private, and static versus non-static"
 teaching: 20
 exercises: 20
 questions:
-- "Key question (FIXME)"
+- "How to set initial values for object attributes at creation time?"
+- "Can all object attributes be accessed directly from outside?"
 objectives:
 - "Understand the implication of public and private flags."
 - "Understand the usage of constructor in class definition."
