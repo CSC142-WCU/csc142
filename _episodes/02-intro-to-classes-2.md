@@ -118,7 +118,7 @@ private attributes (*dimensions*, *color*, and *brightness*).
 
 The figure below presents the steps to compile and run `CellPhoneTwoMain.java` and the resulting outcomes. 
 
-<img src="../fig/CellPhoneTwo.png" alt="Compiling and running CellPhoneTwoMain.java" style="height:300px">
+<img src="../assets/fig/CellPhoneTwo.png" alt="Compiling and running CellPhoneTwoMain.java" style="height:300px">
 
 > ## Observing errors from trying to interact with private attributes without using assessors or mutators:
 > A major goal of object-oriented programming is to provide isolation. In other words, this ensures the integrity of
@@ -134,7 +134,7 @@ The figure below presents the steps to compile and run `CellPhoneTwoMain.java` a
 > > are two errors reported since we try this direct access approach twice. From the screenshot, you can see how the 
 > > error indicators show two different errors on the same line (line 11).
 > >
-> >  <img src="../fig/CellPhoneTwoWrong.png" alt="Compiling and running CellPhoneTwoMainWrong.java" style="height:600px">
+> >  <img src="../assets/fig/CellPhoneTwoWrong.png" alt="Compiling and running CellPhoneTwoMainWrong.java" style="height:600px">
 > >  
 > {: .solution}
 {: .challenge}

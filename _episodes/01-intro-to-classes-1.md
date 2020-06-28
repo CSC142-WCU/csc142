@@ -21,7 +21,7 @@ keypoints:
 - A **class** is a segment of code in which programmers define attributes and behaviors of *a thing*. One could think of class as a blueprint of *that thing*. 
 - When the program runs and needs to create an instance of *this thing*, this instance is called an **object** and will be instantiated from the descriptions written in the class code. Another term instead of **object** is **instance**. 
 
-<img src="../fig/class_object.png" alt="Analogy about the relationship between class and object: a phone hardware diagram and the actual phones" style="height:450px">
+<img src="../assets/fig/class_object.png" alt="Analogy about the relationship between class and object: a phone hardware diagram and the actual phones" style="height:450px">
 
 > ## How many objects per class:
 > It should be noted that multiple objects can be instantiated from a class. 
@@ -80,7 +80,7 @@ When `CellPhoneOneMain.java` is compiled, it requires `CellPhoneOne.java` to be 
 compilation process will create the `.class` files for both. You can now call `java CellPhoneOneMain` and see
 the only output resulting from `callNumber`. 
 
-<img src="../fig/CellPhoneOneMain.png" alt="Compile and run CellPhoneOneMain" style="height:150px">
+<img src="../assets/fig/CellPhoneOneMain.png" alt="Compile and run CellPhoneOneMain" style="height:150px">
 
 The above programs are not really useful (or sensible) for a number of reasons. Aside from the fact that there
 are way to few attributes and functionalities, one item that does not make sense is the fact that the external program (*CellPhoneOneMain*)
