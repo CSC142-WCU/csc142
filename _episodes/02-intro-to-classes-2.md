@@ -5,7 +5,7 @@ exercises: 20
 questions:
 - "How to set initial values for object attributes at creation time?"
 - "Can all object attributes be accessed directly from outside?"
-- "Can a method be invoked with or with object instantiation?"
+- "Can a method be invoked with or without object instantiation?"
 objectives:
 - "Understand the implication of public and private flags."
 - "Understand the usage of constructor in class definition."
@@ -139,7 +139,7 @@ The figure below presents the steps to compile and run `CellPhoneTwoMain.java` a
 > {: .solution}
 {: .challenge}
 
-## Static methods
+## Static methods/attributes
 
 Methods within a class can either have a `static` in front of their names or not, immediately after 
 the `public`/`private` flag. A method with the `static` flag can be invoked without object
@@ -148,7 +148,10 @@ the `public`/`private` flag. A method with the `static` flag can be invoked with
 
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=SquareRoot.java"></script>
 
-In the above example, the `sqrt` method is invoked to calculate the square root of variable `x` that has a value of 16. Because this method belongs to the Math class, to invoke it, you will have to also specify the class that contains the method: `Math.sqrt(x)` (line 7). 
+In the above example, the `sqrt` method is invoked to calculate the square root of variable `x` that has a value of 16. Because this method belongs to the Math class, to invoke it, you will have to also specify the class that contains the method: `Math.sqrt(x)` (line 7).
+
+Similar to methods, attributes can also have a `static` flag. The absence of this flag allows
+the attributes to be accessed without object instantiation. 
 
 
 {% include links.md %}

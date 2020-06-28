@@ -74,9 +74,9 @@ clean :
 	@find . -name '*.pyc' -exec rm {} \;
 
 ## * clean-rmd        : clean intermediate R files (that need to be committed to the repo)
-clean-rmd :
-	@rm -rf ${RMD_DST}
-	@rm -rf fig/rmd-*
+#clean-rmd :
+#	@rm -rf ${RMD_DST}
+#	@rm -rf fig/rmd-*
 
 
 ##
@@ -97,8 +97,8 @@ workshop-check :
 .PHONY : lesson-check lesson-md lesson-files lesson-fixme
 
 # RMarkdown files
-RMD_SRC = $(wildcard _episodes_rmd/??-*.Rmd)
-RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
+#RMD_SRC = $(wildcard _episodes_rmd/??-*.Rmd)
+#RMD_DST = $(patsubst _episodes_rmd/%.Rmd,_episodes/%.md,$(RMD_SRC))
 
 # Lesson source files in the order they appear in the navigation menu.
 MARKDOWN_SRC = \
@@ -121,10 +121,10 @@ HTML_DST = \
   ${DST}/license/index.html
 
 ## * lesson-md        : convert Rmarkdown files to markdown
-lesson-md : ${RMD_DST}
+#lesson-md : ${RMD_DST}
 
-_episodes/%.md: _episodes_rmd/%.Rmd
-	@bin/knit_lessons.sh $< $@
+#_episodes/%.md: _episodes_rmd/%.Rmd
+#	@bin/knit_lessons.sh $< $@
 
 # * lesson-check     : validate lesson Markdown
 lesson-check : lesson-fixme
@@ -140,8 +140,8 @@ unittest :
 
 ## * lesson-files     : show expected names of generated files for debugging
 lesson-files :
-	@echo 'RMD_SRC:' ${RMD_SRC}
-	@echo 'RMD_DST:' ${RMD_DST}
+#	@echo 'RMD_SRC:' ${RMD_SRC}
+#	@echo 'RMD_DST:' ${RMD_DST}
 	@echo 'MARKDOWN_SRC:' ${MARKDOWN_SRC}
 	@echo 'HTML_DST:' ${HTML_DST}
 
