@@ -67,7 +67,7 @@ If you compile and attempt to run CellPhoneOne.class, nothing really happens bec
 
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=CellPhoneOne.java"></script>
 
-<img src="../fig/CellPhoneOne.png" alt="Compile and run CellPhoneOne" style="height:100px">
+<img src="../assets/fig/CellPhoneOne.png" alt="Compile and run CellPhoneOne" style="height:100px">
 
 This next source code will declare, instantiate, and manipulate an object of type CellPhoneOne. Line 6 **declares**
 a variable named `aPhone` of type CellPhoneOne. Line 7 **instantiates** an object (instance) from class CellPhoneOne,
