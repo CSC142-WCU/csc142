@@ -64,6 +64,12 @@ that you have both `java` and `javac`.
 
 <img src="../fig/vscode_install.png" alt="Test for java and javac in VSCode's terminal" style="height:450px">
 
+## Installation of Gradle
+
+Follows the installation steps described in [Gradle's documentation page](https://docs.gradle.org/current/userguide/installation.html) to install and setup gradle. 
+
+<img src="../fig/gradle.png" alt="Test for gradle in VSCode's terminal" style="height:350px">
+
 ## Setup GitHub account
 - If you don't already have a GitHub account, go to [GitHub web page][github] to sign up for an account. 
 - It should be noted that you can link multiple email addresses to a GitHub account. Even if you already have a 
