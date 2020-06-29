@@ -62,13 +62,13 @@ by OpenJDK.
 - Once the installation process finishes, carry out the tests *in a ner terminal* above to confirm
 that you have both `java` and `javac`.
 
-<img src="../assets/fig/vscode_install.png" alt="Test for java and javac in VSCode's terminal" style="height:450px">
+<img src="assets/fig/vscode_install.png" alt="Test for java and javac in VSCode's terminal" style="height:450px">
 
 ## Installation of Gradle
 
 Follows the installation steps described in [Gradle's documentation page](https://docs.gradle.org/current/userguide/installation.html) to install and setup gradle. 
 
-<img src="../assets/fig/gradle.png" alt="Test for gradle in VSCode's terminal" style="height:350px">
+<img src="assets/fig/gradle.png" alt="Test for gradle in VSCode's terminal" style="height:350px">
 
 ## Setup GitHub account
 - If you don't already have a GitHub account, go to [GitHub web page][github] to sign up for an account. 

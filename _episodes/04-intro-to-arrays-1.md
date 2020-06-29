@@ -3,13 +3,18 @@ title: "Introduction to Arrays"
 teaching: 20
 exercises: 20
 questions:
-- "Key question (FIXME)"
+- "How do we manage large number of variables?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Be able to declare an array of objects given a specific primitive type for these objects."
+- "Be able to initialize an array of specific type given the size of the array (how many objects can this array contain)."
+- "Be able to initialize elements (objects) of an array that is already initialized." 
+- "Be able to manipulate objects (all or individually) inside a given array."
+- "Be able to create an appropriate array (size/type) given a specific problem statement."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "For large number of variables in the same design category (e.g., students in class, 
+   courses in a semester ...), we can use a data structure called array to store multiple
+   instances of object/primitive of the same type."
 ---
-FIXME
 
 # 7.1 Introduction to Arrays
 # 7.2 Processing Array Elements
