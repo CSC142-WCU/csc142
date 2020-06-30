@@ -13,9 +13,16 @@ keypoints:
 - "Arrays can have multiple dimensions to represent spreasheets whose columns are of the same type and have the same length."
 ---
 
-# 7.7 Array of Objects
-# 7.8 String Arrays
-# 7.9 Two dimensional arrays
-# 7.10 Arrays with three or more dimensions. 
+# Array of Strings
+
+
+
+# Array of Objects
+
+
+
+# Two dimensional arrays
+
+
 
 {% include links.md %}
