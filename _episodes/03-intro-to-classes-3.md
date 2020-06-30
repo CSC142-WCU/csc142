@@ -11,7 +11,7 @@ keypoints:
 a class. This is called overloading."
 ---
 
-# 6.6 Overloading Methods and Constructors
+# Overloading Methods and Constructors
 
 Imagine a grocery store. Customers checking out of a grocery store can have at least three 
 different ways to pay. They can pay by cash (`numeric`). They can also pay by credit card (`object`). These different types of payment represent an 
