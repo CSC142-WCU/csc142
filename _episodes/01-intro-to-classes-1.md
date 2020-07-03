@@ -53,7 +53,7 @@ you can also see them referred to as **class variables**.
 > >  1. This is a class definition. It defines how a house should be built in the neighborhood. 
 > >  2. This is a class attribute. 
 > >  3. This is also a class attribute. 
-> >  4. This is a class method. An action that 
+> >  4. This is a class method. An action that manipulates an attribute (house lights). 
 > {: .solution}
 {: .challenge}
 
