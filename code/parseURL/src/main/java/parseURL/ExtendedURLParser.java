@@ -9,30 +9,33 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class URLParser {
+public class ExtendedURLParser {
 
-    public static void getType(String[] workList) {
+    public static void getType(Work[] workList) {
         for (int i = 0; i < workList.length; i++) {
-            if (workList[i].toLowerCase().contains("plays")) {
-                System.out.println(workList[i] + ": PLAY");
-            } else if (workList[i].toLowerCase().contains("sonnets")) {
-                System.out.println(workList[i] + ": SONNETS");
+            if (workList[i].getURL().toLowerCase().contains("plays")) {
+                workList[i].setType("play");
+                System.out.println(workList[i].getTitle() + ": PLAY");
+            } else if (workList[i].getURL().toLowerCase().contains("sonnets")) {
+                workList[i].setType("sonnet");
+                System.out.println(workList[i].getTitle() + ": SONNET");
             } else {
-                System.out.println(workList[i] + ": POEM");
+                workList[i].setType("poem");
+                System.out.println(workList[i].getTitle() + ": POEM");
             }
         }
     }
 
-    public static String[] getWork(String url) {
-        String[] results = null;
+    public static Work[] getWork(String url) {
+        Work[] results = null;
         try {
             Document doc = Jsoup.connect(url).get();
             String title = doc.title();
             Elements links = doc.select("[class='sidebarworks']").select("a[href]");
-            results = new String[links.size()];
+            results = new Work[links.size()];
             for (int b = 0; b < links.size(); b++) {
                 Element bElem = links.get(b);
-                results[b] = bElem.attr("href").toString();
+                results[b] = new Work(bElem.text(), bElem.attr("href").toString());
             }
             return results;
         } catch (IOException e) {
@@ -43,7 +46,7 @@ public class URLParser {
 
     public static void main(String[] args) {
         String baseURL = "http://www.opensourceshakespeare.org";
-        String[] workList = getWork(baseURL);
+        Work[] workList = getWork(baseURL);
         getType(workList);
     }
 }
