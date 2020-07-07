@@ -13,7 +13,19 @@ keypoints:
 - "Arrays can have multiple dimensions to represent spreasheets whose columns are of the same type and have the same length."
 ---
 
+Array (the concept) is the most basic data structure (*just line things up!*) in programming and 
+can be used to organized  both primitive and complex objects. 
+
+> ## Problem Statement
+> We wish to mine information about Shakespeare's life work, including titles, 
+> types, and length (of plays) from an online site. The list of tasks include:
+> - Mine list of work from original URL and classify work as plays, sonnets, or poems. 
+> - Refine/augment list of work to include full titles. 
+> - Based on classification, construct URL to individual play and mine for work length. 
+{: .prereq}
+
 # Array of Strings
+
 
 
 
