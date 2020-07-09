@@ -149,6 +149,6 @@ title and partial URL of each work are used as arguments in the instantiation of
 
 # Two dimensional arrays
 
-To know the length of each play, we can (naively) multiply the number of acts and the number of scenes in each act. In other word, we need to mine and store this information. 
+To know the length of each play, we can (naively) multiply the number of acts and the number of scenes in each act. In other word, we need to mine and store this information. Perhaps a two dimensional array of integers, with the first dimension storing 
 
 {% include links.md %}
