@@ -17,19 +17,28 @@ Array (the concept) is the most basic data structure (*just line things up!*) in
 can be used to organized  both primitive and complex objects. 
 
 > ## Problem Statement
-> We wish to mine information about Shakespeare's life work, including titles, 
-> types, and length (of plays) from an online site. The list of tasks include:
-> - Mine list of work from original URL and classify work as plays, sonnets, or poems. 
-> - Refine/augment list of work to include full titles. 
-> - Based on classification, construct URL to individual play and mine for work length. 
+> We wish to study how many awards, and how much money, have been granted to Pennsylvania
+> from National Science Foundation (NFS)'s Directorate of Computer and Information Science
+> and Engineering (CISE) in 2019. The file `Awards_CISE_2019.csv` contains all awards from 
+> CISE. The first line is the header line. The header represents the relevant fields of an 
+> an award, including AwardNumber, Title, NSFOrganization, Program(s), StartDate, 
+> LastAmendmentDate, PrincipalInvestigator, State, Organization, AwardInstrument, 
+> ProgramManager, EndDate, AwardedAmountToDate, Co-PIName(s), PIEmailAddress, 
+> OrganizationStreet, OrganizationCity, OrganizationState, OrganizationZip,
+> OrganizationPhone, NSFDirectorate, ProgramElementCode(s), ProgramReferenceCode(s),
+> ARRAAmount, Abstract. The data (string) in each field is enclosed in double quotes, and
+> separated by a comma. 
+> - Mine the list of all states that received awards in 2019. 
+> - Refine/augment list of work to include award titles. 
+> - Include additional information per award, including the amount of money. 
 {: .prereq}
 
 # Array of Strings
 
-In `URLParser.java`, we carry out the first task of mining the URL of the online site, 
+In `ParseAwards.java`, we carry out the first task of mining the URL of the online site, 
 extract information about Shakespeare's work, and classify individual work into play, sonnets, or poems. 
 
-<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=URLParser.java"></script>
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=ParseAwards.java"></script>
 
 > ## Code Reading Practice:
 > 
