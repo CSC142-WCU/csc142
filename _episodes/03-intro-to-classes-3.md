@@ -42,7 +42,7 @@ the `Cashier` object calls a `payment` method. This is the first definition of `
 with a balance of $100. The `Cashier` object invokes `payment` again, this time the second 
 definition of payment is implied due to the nature of the method's arguments. We use the `CreditCard` object to print out the balance of the credit card. 
 
-<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=SquareRoot.java"></script>
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=Grocery.java"></script>
 
 The compilation and running of `Grocery.java` is shown below. 
 
