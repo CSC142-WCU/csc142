@@ -58,19 +58,55 @@ extract information about Shakespeare's work, and classify individual work into 
 > {: .solution}
 {: .challenge}
 
+> ## Code Correction:
+> 
+> There is a logical error with this code. What is it, and how do you fix it? 
+>
+> > ## Solution
+> >  - The `State` header is included in the results. 
+> >  - Run `nextLine()` once prior to the `while` loop to ommit the header row. 
+> {: .solution}
+{: .challenge}
+
 In running the above code, besides creating the `ParseAwards.java` file, we must also download [Awards_CISE_2019.csv](awards-cise-2019) and store this 
 file in the same directory as the Java file. 
 
 <img src="../assets/fig/parseAwards.png" alt="Viewing data and source code for ParseAwards.java and then compile and run" style="height:300px">
 
-To further improve on `parseAwards.java`, we can redesign it so that `main()` is simplified and the heavy work is moved into another function. 
+To further improve on `parseAwards.java`, we can redesign it so that `main()` is simplified and the heavy work is moved into another function. This is 
+shown `ExtendedParseAwards.java`. 
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=ExtendedParseAwards.java"></script>
+
+> ## Code Reading Practice:
+> 
+> Going over the above source code line by line. 
+>
+> > ## Solution
+> >  - Line 1-2: Java imports
+> >  - Line 4: Class name - `ParseAwards`
+> >  - Line 24: Main function
+> >  - Line 25: Static method `stateList` is invoked with argument is the name of the data file (same-directory assumption). The returned value of this method call will be assigned to variable fundedStates of type array of Strings. 
+> >  - Line 6: Declaration of method `stateList` with parameter is a String contains the path to the file. 
+> >  - Line 7: Assign an empty String to variable states of type String. 
+> >  - Line 8-17: Scope of `try` 
+> >  - Line 9: Create a `File` object using the *relative path* to data file `Awards_CISE_2019.csv`. Assign this object to variable `awardFile`.
+> >  - Line 10: Declare a Scanner object that *scan* from content of `awardFile`, and assign this object to variable `sc`. 
+> >  - Line 11-16: While there is still next line (`hasNextLine()`) in `awardFile`, step into `while` loop. 
+> >  - Line 12: The string read in by `sc.nextLine()` is splitted using `","` as token. This is due to the characteristics of data line in the file. The resulting array of Strings is assigned to variable `award` of type array of Strings.  
+> >  - Line 13: If `states` does **not** already contain the eigth element of the `award` variable (`award[7]`),
+> >  - Line 14: Append `award[7]` and a space to `states`.  
+> >  - Line 17: Return the result of a split call on `states` using a single space (`" "`) as token. 
+> >  - Line 18-20: The `catch` portion in the case we have an IOException error. 
+> >  - Line 21: If an exception happens, a `null` value will be returned. 
+> >  - Line 26-28: Iterate through elements of `fundedStates` using `i`, with `i` iterates from 0 to a value less than the length of the `fundedStates` array. 
+> >  - Line 27: Print out the element at index i<sup>th</sup> of `fundedStates`.  
+> {: .solution}
+{: .challenge}
 
 # Array of Objects
 
-Instead of simply using an array of Strings to store all work, an additional 
-class called `Work.java` is created. Class `Work` represents individual work 
-and has three attributes: `title`, `url`, and `type`. It also has the 
-corresponding asessor and mutator methods for each of the attributes. 
+To store additional information on each individual states, we will need to create a `State` class (`State.java`). 
 
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=Work.java"></script>
 
@@ -79,7 +115,7 @@ Intead of using an array of Strings to store only the partial links to the indiv
 `ExtendedURLParser` uses an array of `Work`. When contents are extract from the base URL, both 
 title and partial URL of each work are used as arguments in the instantiation of an object of type `Work`. 
 
-<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=ExtendedURLParser.java"></script>
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=ExtendedParseAwards.java"></script>
 
 > ## Code Reading Practice:
 > 
