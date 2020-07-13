@@ -45,16 +45,15 @@ extract information about Shakespeare's work, and classify individual work into 
 > Going over the above source code line by line. 
 >
 > > ## Solution
-> >  - Line 4: Package name 
-> >  - Line 6-10: Java imports
-> >  - Line 12: Class name - `URLParser`
-> >  - Line 44: Main function
-> >  - Line 45: Declare variable `baseURL` of type String. Assign the string "http://www.opensourceshakespeare.org" to this variable. 
-> >  - Line 46: Declare variable `workList` as an array of Strings. Assign the return value of method `getWork` to this variable. Method `getWork` use `baseURL` (declared and initialized in 46) as its argument. 
-> >  - Line 26: Define method `getWork` as a public and static method, which takes in a String as a parameter and return an array of String. 
-> >  - Line 27: Declare a variable `results` as an array of Strings and initialize `results` to 
-> **null** value. 
-> >  - Line 28-40: A try-catch block for `IOException`. The library **Jsoup** uses Java IO mechanism to read online data. Therefore, we have to anticipate and catch any possible `IOException`. 
+> >  - Line 1-2: Java imports
+> >  - Line 4: Class name - `ParseAwards`
+> >  - Line 5: Main function
+> >  - Line 6-12: Scope of `try` 
+> >  - Line 7: Create a `File` object using the *relative path* to data file `Awards_CISE_2019.csv`. Assign this object to variable `awardFile`.
+> >  - Line 8: Declare a Scanner object that *scan* from content of `awardFile`, and assign this object to variable `sc`. 
+> >  - Line 9: While there is still next line (`hasNextLine()`) in `awardFile`, step into `while` loop. 
+> >  - Line 10: The string read in by `sc.nextLine()` is splitted using `","` as token. This is due to the 
+>      characteristics of data line in the file. The resulting array of Strings is assigned to variable `award` of type array of Strings.  
 > >  - Line 29: Declare a variable `doc` of type `Document` (a class in Jsoup library). `Document` represents HTML/XML objects. Variable `doc` is initialized to the content acquired from the link `url` (Parameter of `getWork`). 
 > >  - Line 31: The values of attribute `href` from HTML elements in `doc` that have HTML tags containing the HTML attribute `class='sidebarworks` are collected and assigned to a single variable named `links` of type `Elements` (a class in Jsoup library).
 > >  - Line 32: Initialize variable `results` (declared in line 28) to an array of Strings whose size is the same size of `links`. 
