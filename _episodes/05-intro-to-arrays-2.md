@@ -52,75 +52,18 @@ extract information about Shakespeare's work, and classify individual work into 
 > >  - Line 7: Create a `File` object using the *relative path* to data file `Awards_CISE_2019.csv`. Assign this object to variable `awardFile`.
 > >  - Line 8: Declare a Scanner object that *scan* from content of `awardFile`, and assign this object to variable `sc`. 
 > >  - Line 9: While there is still next line (`hasNextLine()`) in `awardFile`, step into `while` loop. 
-> >  - Line 10: The string read in by `sc.nextLine()` is splitted using `","` as token. This is due to the 
->      characteristics of data line in the file. The resulting array of Strings is assigned to variable `award` of type array of Strings.  
-> >  - Line 29: Declare a variable `doc` of type `Document` (a class in Jsoup library). `Document` represents HTML/XML objects. Variable `doc` is initialized to the content acquired from the link `url` (Parameter of `getWork`). 
-> >  - Line 31: The values of attribute `href` from HTML elements in `doc` that have HTML tags containing the HTML attribute `class='sidebarworks` are collected and assigned to a single variable named `links` of type `Elements` (a class in Jsoup library).
-> >  - Line 32: Initialize variable `results` (declared in line 28) to an array of Strings whose size is the same size of `links`. 
-> >  - Line 33-36: A **for** loop that iterates through each item of `links`. 
-> >  - Line 34: Assign the element of links (at each iteration) to a variable named `bElem` of type `Element` (note the difference: `Element` and `Elements`). 
-> >  - Line 35: Convert the value of the link stored in `bElem` to String and assign this string to the item in the `results` array that has the same index as the corresponding item in the `links` list. 
-> >  - Line 37: Return `results`. This will terminate the method. 
-> >  - Line 41: If an exception happens (Line 38 will not be invoked), we still need to return variable `results`. In this case, the returned value is **null**. 
-> >  - Line 47: Call method `getType` with argument is variable `workList` (line 46), which contains the returned array of Strings from `getWork`. 
-> >  - Line 14: Define method `getType` as a public and static method, which takes in an array of String as a parameter. `getType` does not return anything (void). 
-> >  - Line 15-23: A **for** loop that iterates through each item in the array of Strings. 
-> >  - Line 16: Check if the item at the current iteration contains the string "plays".
-> >  - Line 17: If the condition in 16 is True, print out the item and the string ": PLAY". 
-> >  - Line 18: Check if the item at the current iteration contains the string "sonnets".
-> >  - Line 19: If the condition in 16 is True, print out the item and the string ": SONNETS". 
-> >  - Line 20: If the item contains neither "plays" nor "sonnets". 
-> >  - Line 21: Print out the item and the string ": POEM". 
+> >  - Line 10: The string read in by `sc.nextLine()` is splitted using `","` as token. This is due to the characteristics of data line in the file. The resulting array of Strings is assigned to variable `award` of type array of Strings.  
+> >  - Line 11: The eigth element of the `award` variable (`award[7]`) is printed out.  
+> >  - Line 13-15: The `catch` portion in the case we have an IOException error. 
 > {: .solution}
 {: .challenge}
 
-To run the above code, we need to use gradle. This helps managing the inclusion of `jSoup`. 
-Run the following commands. For `gradle`, keep hitting Enter to accept all default answers. 
+In running the above code, besides creating the `ParseAwards.java` file, we must also download [Awards_CISE_2019.csv](awards-cise-2019) and store this 
+file in the same directory as the Java file. 
 
-```
-$ mkdir parseURL
-$ cd parseURL
-$ gradle init --type java-application --test-framework junit-jupiter
-```
-<img src="../assets/fig/parseURLgradle.png" alt="Generate the gradle repository for parseURL" style="height:350px">
+<img src="../assets/fig/parseAwards.png" alt="Viewing data and source code for ParseAwards.java and then compile and run" style="height:300px">
 
-Modify `build.gradle` to contain the followings:
-
-```
-plugins {
-    id 'java'
-    id 'application'
-}
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation 'com.google.guava:guava:29.0-jre'
-    compile 'org.jsoup:jsoup:1.10.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.2'
-}
-
-application {
-    mainClassName = 'parseURL.URLParser'
-}
-
-test {
-    useJUnitPlatform()
-    testLogging {
-        events "passed", "skipped", "failed"
-        exceptionFormat = "full"
-    }
-}
-```
-
-Comment out lines 11 and 12 inside `AppTest.java`. 
-To run the program, type `gradle run` inside the terminal and hit **Enter**. 
-
-<img src="../assets/fig/parseURL.png" alt="Use gradle to build and run parseURL" style="height:600px">
-
+To further improve on `parseAwards.java`, we can redesign it so that `main()` is simplified and the heavy work is moved into another function. 
 
 # Array of Objects
 
