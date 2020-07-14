@@ -58,20 +58,20 @@ extract information about Shakespeare's work, and classify individual work into 
 > {: .solution}
 {: .challenge}
 
+In running the above code, besides creating the `ParseAwards.java` file, we must also download [Awards_CISE_2019.csv](awards-cise-2019) and store this 
+file in the same directory as the Java file. 
+
+<img src="../assets/fig/parseAwards.png" alt="Viewing data and source code for ParseAwards.java and then compile and run" style="height:300px">
+
 > ## Code Correction:
 > 
-> There is a logical error with this code. What is it, and how do you fix it? 
+> There is a logical error with `parseAwards.java`. What is it, and how do you fix it? 
 >
 > > ## Solution
 > >  - The `State` header is included in the results. 
 > >  - Run `nextLine()` once prior to the `while` loop to ommit the header row. 
 > {: .solution}
 {: .challenge}
-
-In running the above code, besides creating the `ParseAwards.java` file, we must also download [Awards_CISE_2019.csv](awards-cise-2019) and store this 
-file in the same directory as the Java file. 
-
-<img src="../assets/fig/parseAwards.png" alt="Viewing data and source code for ParseAwards.java and then compile and run" style="height:300px">
 
 To further improve on `parseAwards.java`, we can redesign it so that `main()` is simplified and the heavy work is moved into another function. This is 
 shown `ExtendedParseAwards.java`. 
@@ -108,34 +108,76 @@ shown `ExtendedParseAwards.java`.
 
 To store additional information on each individual states, we will need to create a `State` class (`State.java`). 
 
-<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=Work.java"></script>
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=State.java"></script>
 
-Class `ExtendedURLParser.java` leverages `Work` to acquire and display more information. 
+Class `ExtendedState.java` leverages `State` to acquire and display more information. 
 Intead of using an array of Strings to store only the partial links to the individual work, 
-`ExtendedURLParser` uses an array of `Work`. When contents are extract from the base URL, both 
-title and partial URL of each work are used as arguments in the instantiation of an object of type `Work`. 
+`ExtendedState` uses an array of `State`. Several rounds of reading through the data file were carried out.
 
-<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=ExtendedParseAwards.java"></script>
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=ExtendedStateAwards.java"></script>
+
+<img src="../assets/fig/ExtendedStateAwards.png" alt="Compile and run ExtendedStateAwards.java" style="height:450px">
+
 
 > ## Code Reading Practice:
 > 
-> Indentify the differences between `ExtendedURLParser.java` and `URLParser.java`. 
->
+> - What does the first round of reading through the data file (line 30 to 40) do? 
+> - How many times did the code read through the data file in total?
+> 
 > > ## Solution
-> >  - Line 46: Declare variable `workList` as an array of `Work` objects instead of an array of Strings.  
-> >  - Line 30: Declare a variable `results` as an array of `Work` objects and initialize `results` to **null** value. 
-> >  - Line 35: Initialize variable `results` (declared in line 28) to an array of `Work` objects. 
-> >  - Line 38: The item ranked `b` in the `results` array is assigned a `Work` object that has been instantiated with the text of the title and the partial URL as constructor arguments. 
-> >  - Line 37: Return `results`. This will terminate the method. 
-> >  - Line 50: Call method `getType` with argument is variable `workList`, which contains the returned array of `Work` objects from `getWork`. 
-> >  - Line 14: Define method `getType` as a public and static method, which takes in an array of `Work` objects as a parameter. `getType` does not return anything (void). 
-> >  - Line 15-23: A **for** loop that iterates through each item in the array of `Work` objects. 
-> >  - Line 16-21: The over ideas are the same, but asessor and mutator methods are used to access and modify title and type attributes of individual `Work` objects. 
+> >  - Identify the unique states that have awards included in the data files.   
+> >  - The number of data file read-through is equal to the number of unique states in the data files (54-62 inside condition inside loop) plus one (30-40).
 > {: .solution}
 {: .challenge}
 
+
+> ## Code Modification Practice:
+> 
+> - How can we make the total amount fully printed out in non-scientific format (more readable)?
+> 
+> > ## Solution
+> >  `System.out.printf("%s: %08.02f\n", fundedStates[i].getName(), fundedStates[i].getSum());`
+> {: .solution}
+{: .challenge}
+
+
 # Two dimensional arrays
 
-To know the length of each play, we can (naively) multiply the number of acts and the number of scenes in each act. In other word, we need to mine and store this information. Perhaps a two dimensional array of integers, with the first dimension storing 
+`ExtendedStateAwards.java` can be simplified if we only want to keep track of the number of awards and the total 
+amount awarded per state. It can be done by leveraging a two dimensional array. A two dimensional array is declared 
+using two pairs of square bracket. For example `int[][] oneArray` declares a variable `arrayOne` of type two-dimensional 
+array of `int`. As the syntax suggested, all elements of a two-dimensional array must be of the same type. A 
+two-dimensional array is somewhat similar to an Excel spreadsheet in that it represents a row/column data structure. 
+The first bracket pair maintainsindex for the number of rows, and the second bracket pair maintains index for the 
+number of columns. 
 
+An example of a simple two-dimensional array is shown in `TwoDims.java`.
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=TwoDims.java"></script>
+
+<img src="../assets/fig/TwoDims.png" alt="Compile and run TwoDims.java" style="height:250px">
+
+> ## Code Modifiction Practice:
+> 
+> - Can you augment TwoDims so that it prints out a transposed version of `oneArray`
+> 
+> > ## Solution
+> >   `System.out.print(oneArray[j][i] + " ");`
+> {: .solution}
+{: .challenge}
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=SimpleStateAwards.java"></script>
+
+> ## Code Reading Practice:
+> 
+> - What are the difference between `SimpleStateAwards.java` and `ExtendedStateAwards.java`?
+> 
+> > ## Solution
+> >  - Changes in usage of two-dimensional variable `statesReport` (47, 51, 59-60, 75) versus usage of array of `State` objects `awardedStates` (47,51,60-62,77).
+> {: .solution}
+{: .challenge}
+
+<img src="../assets/fig/SimpleStateAwards.png" alt="Compile and run SimpleStateAwards.java" style="height:300px">
+
+           
 {% include links.md %}

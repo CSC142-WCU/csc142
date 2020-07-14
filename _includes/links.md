@@ -48,3 +48,4 @@
 [vscode]: https://code.visualstudio.com/download
 [github]: https://github.com
 [awards-cise-2019]: https://raw.githubusercontent.com/CSC142-WCU/csc142/master/code/Awards_CISE_2019.csv
+[array-list]: https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html

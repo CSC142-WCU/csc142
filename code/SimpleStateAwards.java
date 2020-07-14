@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.io.*;
 
-public class ExtendedStateAwards {
+public class SimpleStateAwards {
   private static String[] allStates = new String[]{"AK", "AL", "AR", "AS", "AZ", "CA", 
                                                    "CO", "CT", "DC", "DE", "FL", "GA", 
                                                    "GU", "HI", "IA", "ID", "IL", "IN", 
@@ -22,7 +22,7 @@ public class ExtendedStateAwards {
     return -1;
   }
 
-  private static State[] stateList(String filename){
+  private static double[][] stateList(String filename){
     int[] countPerState = new int[allStates.length];
     int stateCount = 0;
     Scanner sc;
@@ -44,12 +44,11 @@ public class ExtendedStateAwards {
       e.printStackTrace();
     }
 
-    State[] awardedStates = new State[stateCount];
+    double[][] statesReport = new double[stateCount][3];
     int index = 0;
     for (int i = 0; i < allStates.length; i++){
       if (countPerState[i] > 0) {
-        awardedStates[index] = new State(allStates[i], countPerState[i]);
-        int awardIndex = 0;
+        statesReport[index][0] = i;
         try {
           File awardFile = new File(filename);
           sc = new Scanner(awardFile);      
@@ -57,9 +56,8 @@ public class ExtendedStateAwards {
           while (sc.hasNextLine()) {
             String[] award = sc.nextLine().split("\",\"");
             if (allStates[i].compareTo(award[7]) == 0) {
-              awardedStates[index].setTitle(award[1],awardIndex);
-              awardedStates[index].setAmount(Double.parseDouble(award[12].substring(1).replaceAll(",", "")),awardIndex);
-              awardIndex++;
+              statesReport[index][1] += 1;
+              statesReport[index][2] += Double.parseDouble(award[12].substring(1).replaceAll(",", ""));
             }
           }
         } catch (IOException e) {
@@ -68,14 +66,13 @@ public class ExtendedStateAwards {
         index++;
       }
     }
-    return awardedStates;
+    return statesReport;
   }
 
   public static void main(String[] args) {
-    State[] fundedStates = stateList("Awards_CISE_2019.csv");
+    double[][] fundedStates = stateList("Awards_CISE_2019.csv");
     for (int i = 0; i < fundedStates.length; i++) {
-      //System.out.println(fundedStates[i].getName() + ": " + fundedStates[i].getSum());
-      System.out.printf("%s: %08.02f\n", fundedStates[i].getName(), fundedStates[i].getSum());
+      System.out.printf("%s: %08.02f\n", allStates[(int)fundedStates[i][0]], fundedStates[i][2]);
     }
   }
 }
