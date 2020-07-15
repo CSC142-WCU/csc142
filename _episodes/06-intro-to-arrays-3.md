@@ -69,7 +69,7 @@ use **variable-length arguments**.
 In the previous lesson, we had to iterate through our data file multiple times to get the counts before declaring 
 and initializing arrays. This is inefficient, especially as the data grows. As an alternative, Java provides a class
 called ArrayList that supports dynamic arrays that can grow as needed. Additional technical details  
-can be found on [ArrayList's API page](array-list).
+can be found on [ArrayList's API page][array-list].
 
 We reimplement `ExtendedStateAwards.java` as `DynamicStateAwards.java` and `State.java` as `DynamicState.java` using 
 ArrayList as follows:

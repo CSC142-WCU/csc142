@@ -74,8 +74,7 @@ public class ExtendedStateAwards {
   public static void main(String[] args) {
     State[] fundedStates = stateList("Awards_CISE_2019.csv");
     for (int i = 0; i < fundedStates.length; i++) {
-      //System.out.println(fundedStates[i].getName() + ": " + fundedStates[i].getSum());
-      System.out.printf("%s: %08.02f\n", fundedStates[i].getName(), fundedStates[i].getSum());
+      System.out.println(fundedStates[i].getName() + ": " + fundedStates[i].getSum());
     }
   }
 }

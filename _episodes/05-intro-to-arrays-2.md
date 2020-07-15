@@ -58,7 +58,7 @@ extract information about Shakespeare's work, and classify individual work into 
 > {: .solution}
 {: .challenge}
 
-In running the above code, besides creating the `ParseAwards.java` file, we must also download [Awards_CISE_2019.csv](awards-cise-2019) and store this 
+In running the above code, besides creating the `ParseAwards.java` file, we must also download [Awards_CISE_2019.csv][awards-cise-2019] and store this 
 file in the same directory as the Java file. 
 
 <img src="../assets/fig/parseAwards.png" alt="Viewing data and source code for ParseAwards.java and then compile and run" style="height:300px">
