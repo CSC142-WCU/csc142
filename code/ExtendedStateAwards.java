@@ -27,11 +27,11 @@ public class ExtendedStateAwards {
     int stateCount = 0;
     Scanner sc;
     try {
-      File awardFile = new File(filename);
-      sc = new Scanner(awardFile);      
-      sc.nextLine();
-      while (sc.hasNextLine()) {
-        String[] award = sc.nextLine().split("\",\"");
+      BufferedReader br = new BufferedReader(new FileReader(filename));      
+      br.readLine();
+      String current = null;
+      while ((current = br.readLine()) != null) {
+        String[] award = current.split("\",\"");
         int currentIndex = getStateIndex(award[7]);
         if (currentIndex != -1) {
           if (countPerState[currentIndex] == 0) {
@@ -51,11 +51,11 @@ public class ExtendedStateAwards {
         awardedStates[index] = new State(allStates[i], countPerState[i]);
         int awardIndex = 0;
         try {
-          File awardFile = new File(filename);
-          sc = new Scanner(awardFile);      
-          sc.nextLine();
-          while (sc.hasNextLine()) {
-            String[] award = sc.nextLine().split("\",\"");
+          BufferedReader br = new BufferedReader(new FileReader(filename));      
+          br.readLine();
+          String current = null;
+          while ((current = br.readLine()) != null) {
+            String[] award = current.split("\",\"");
             if (allStates[i].compareTo(award[7]) == 0) {
               awardedStates[index].setTitle(award[1],awardIndex);
               awardedStates[index].setAmount(Double.parseDouble(award[12].substring(1).replaceAll(",", "")),awardIndex);

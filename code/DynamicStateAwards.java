@@ -4,20 +4,21 @@ import java.io.*;
 public class DynamicStateAwards {
   private static ArrayList<DynamicState> stateList(String filename){
     try {
-      File awardFile = new File(filename);
-      Scanner sc = new Scanner(awardFile);      
-      sc.nextLine();
+      BufferedReader br = new BufferedReader(new FileReader(filename));      
+      br.readLine();
+      String current = null;
+      
       ArrayList<DynamicState> awardedStates = new ArrayList<DynamicState>();
       String[] award;
 
-      if (sc.hasNextLine()) {
-        award = sc.nextLine().split("\",\"");
+      if ((current = br.readLine()) != null) {
+        award = current.split("\",\"");
         awardedStates.add(new DynamicState(award[7]));
         awardedStates.get(0).addAward(award[1],Double.parseDouble(award[12].substring(1).replaceAll(",", "")));
       }
 
-      while (sc.hasNextLine()) {
-        award = sc.nextLine().split("\",\"");
+      while ((current = br.readLine()) != null) {
+        award = current.split("\",\"");
         DynamicState tmpState = null;
         for (int i = 0; i < awardedStates.size(); i++) {
           if (awardedStates.get(i).getName().compareTo(award[7]) == 0) {

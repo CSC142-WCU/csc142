@@ -27,11 +27,11 @@ public class SimpleStateAwards {
     int stateCount = 0;
     Scanner sc;
     try {
-      File awardFile = new File(filename);
-      sc = new Scanner(awardFile);      
-      sc.nextLine();
-      while (sc.hasNextLine()) {
-        String[] award = sc.nextLine().split("\",\"");
+      BufferedReader br = new BufferedReader(new FileReader(filename));      
+      br.readLine();
+      String current = null;
+      while ((current = br.readLine()) != null) {
+        String[] award = current.split("\",\"");
         int currentIndex = getStateIndex(award[7]);
         if (currentIndex != -1) {
           if (countPerState[currentIndex] == 0) {
@@ -50,11 +50,11 @@ public class SimpleStateAwards {
       if (countPerState[i] > 0) {
         statesReport[index][0] = i;
         try {
-          File awardFile = new File(filename);
-          sc = new Scanner(awardFile);      
-          sc.nextLine();
-          while (sc.hasNextLine()) {
-            String[] award = sc.nextLine().split("\",\"");
+          BufferedReader br = new BufferedReader(new FileReader(filename));      
+          br.readLine();
+          String current = null;
+          while ((current = br.readLine()) != null) {
+            String[] award = current.split("\",\"");
             if (allStates[i].compareTo(award[7]) == 0) {
               statesReport[index][1] += 1;
               statesReport[index][2] += Double.parseDouble(award[12].substring(1).replaceAll(",", ""));

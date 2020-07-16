@@ -49,10 +49,10 @@ extract information about Shakespeare's work, and classify individual work into 
 > >  - Line 4: Class name - `ParseAwards`
 > >  - Line 5: Main function
 > >  - Line 6-12: Scope of `try` 
-> >  - Line 7: Create a `File` object using the *relative path* to data file `Awards_CISE_2019.csv`. Assign this object to variable `awardFile`.
-> >  - Line 8: Declare a Scanner object that *scan* from content of `awardFile`, and assign this object to variable `sc`. 
-> >  - Line 9: While there is still next line (`hasNextLine()`) in `awardFile`, step into `while` loop. 
-> >  - Line 10: The string read in by `sc.nextLine()` is splitted using `","` as token. This is due to the characteristics of data line in the file. The resulting array of Strings is assigned to variable `award` of type array of Strings.  
+> >  - Line 7: Create a `BufferedReader` object using the *relative path* to data file `Awards_CISE_2019.csv`. Assign this object to variable `br`.
+> >  - Line 8: Declare a String variable named `current`, initialized to `null`. 
+> >  - Line 9: While `current`, *which is assigned the value of `br.nextLine()` call, is not `null`. 
+> >  - Line 10: The string `current` is splitted using `","` as token. This is due to the characteristics of data line in the file. The resulting array of Strings is assigned to variable `award` of type array of Strings.  
 > >  - Line 11: The eigth element of the `award` variable (`award[7]`) is printed out.  
 > >  - Line 13-15: The `catch` portion in the case we have an IOException error. 
 > {: .solution}
@@ -84,23 +84,24 @@ shown `ExtendedParseAwards.java`.
 >
 > > ## Solution
 > >  - Line 1-2: Java imports
-> >  - Line 4: Class name - `ParseAwards`
-> >  - Line 24: Main function
-> >  - Line 25: Static method `stateList` is invoked with argument is the name of the data file (same-directory assumption). The returned value of this method call will be assigned to variable fundedStates of type array of Strings. 
+> >  - Line 4: Class name - `ExtendedParseAwards`
+> >  - Line 45: Main function
+> >  - Line 47: Static method `stateListBR` is invoked with argument is the name of the data file (same-directory assumption). The returned value of this method call will be assigned to variable fundedStates of type array of Strings. 
 > >  - Line 6: Declaration of method `stateList` with parameter is a String contains the path to the file. 
 > >  - Line 7: Assign an empty String to variable states of type String. 
 > >  - Line 8-17: Scope of `try` 
-> >  - Line 9: Create a `File` object using the *relative path* to data file `Awards_CISE_2019.csv`. Assign this object to variable `awardFile`.
-> >  - Line 10: Declare a Scanner object that *scan* from content of `awardFile`, and assign this object to variable `sc`. 
-> >  - Line 11-16: While there is still next line (`hasNextLine()`) in `awardFile`, step into `while` loop. 
-> >  - Line 12: The string read in by `sc.nextLine()` is splitted using `","` as token. This is due to the characteristics of data line in the file. The resulting array of Strings is assigned to variable `award` of type array of Strings.  
-> >  - Line 13: If `states` does **not** already contain the eigth element of the `award` variable (`award[7]`),
-> >  - Line 14: Append `award[7]` and a space to `states`.  
-> >  - Line 17: Return the result of a split call on `states` using a single space (`" "`) as token. 
-> >  - Line 18-20: The `catch` portion in the case we have an IOException error. 
-> >  - Line 21: If an exception happens, a `null` value will be returned. 
-> >  - Line 26-28: Iterate through elements of `fundedStates` using `i`, with `i` iterates from 0 to a value less than the length of the `fundedStates` array. 
-> >  - Line 27: Print out the element at index i<sup>th</sup> of `fundedStates`.  
+> >  - Line 9: Create a `BufferedReader` object using the *relative path* to data file `Awards_CISE_2019.csv`. Assign this object to variable `br`.
+> >  - Line 10: Have `br` invokes `readLine()` once to omit the header line. 
+> >  - Line 11: Declare a String variable named `current`, initialized to `null`. 
+> >  - Line 12: While `current`, *which is assigned the value of `br.nextLine()` call, is not `null`. 
+> >  - Line 13: The string `current` is splitted using `","` as token. This is due to the characteristics of data line in the file. The resulting array of Strings is assigned to variable `award` of type array of Strings. 
+> >  - Line 14: If `states` does **not** already contain the eigth element of the `award` variable (`award[7]`),
+> >  - Line 15: Append `award[7]` and a space to `states`.  
+> >  - Line 18: Return the result of a split call on `states` using a single space (`" "`) as token. 
+> >  - Line 19-21: The `catch` portion in the case we have an IOException error. 
+> >  - Line 22: If an exception happens, a `null` value will be returned. 
+> >  - Line 48-50: Iterate through elements of `fundedStates` using `i`, with `i` iterates from 0 to a value less than the length of the `fundedStates` array. 
+> >  - Line 49: Print out the element at index i<sup>th</sup> of `fundedStates`.  
 > {: .solution}
 {: .challenge}
 
@@ -121,12 +122,12 @@ Intead of using an array of Strings to store only the partial links to the indiv
 
 > ## Code Reading Practice:
 > 
-> - What does the first round of reading through the data file (line 30 to 40) do? 
+> - What does the first round of reading through the data file do? 
 > - How many times did the code read through the data file in total?
 > 
 > > ## Solution
 > >  - Identify the unique states that have awards included in the data files.   
-> >  - The number of data file read-through is equal to the number of unique states in the data files (54-62 inside condition inside loop) plus one (30-40).
+> >  - The number of data file read-through is equal to the number of unique states in the data files plus one.
 > {: .solution}
 {: .challenge}
 
@@ -173,7 +174,7 @@ An example of a simple two-dimensional array is shown in `TwoDims.java`.
 > - What are the difference between `SimpleStateAwards.java` and `ExtendedStateAwards.java`?
 > 
 > > ## Solution
-> >  - Changes in usage of two-dimensional variable `statesReport` (47, 51, 59-60, 75) versus usage of array of `State` objects `awardedStates` (47,51,60-62,77).
+> >  - Changes in usage of two-dimensional variable `statesReport` versus usage of array of `State` objects `awardedStates`.
 > {: .solution}
 {: .challenge}
 
