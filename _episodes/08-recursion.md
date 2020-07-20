@@ -3,11 +3,11 @@ title: "Introduction to Recursion"
 teaching: 20
 exercises: 20
 questions:
-- "Key question (FIXME)"
+- "What is recursion?"
 objectives:
-- "First learning objective. (FIXME)"
+- "Understanding the concept of recursion"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "Recursion happens when a method calls itself!"
 ---
 
 # 16.1 Introduction to Recursion
