@@ -47,6 +47,6 @@ The visual of `Exams.java`'s recursive `keepAndPass` call can be seen below:
 - Calculate an arithmetic series. 
 - Binary search. 
 
-<img src="../assets/fig/Recursive_Examples.png" alt="Visual examination of recursive examples" style="height:700px">
+<img src="../assets/fig/recursive.PNG" alt="Visual examination of recursive examples" style="height:900px">
 
 {% include links.md %}
