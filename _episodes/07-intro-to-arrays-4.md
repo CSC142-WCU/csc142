@@ -51,7 +51,7 @@ The outcome of this sorting technique is shown below:
 
 To see how this works, `SelectionSort.java` is modified inton `SelectionSortVisual.java`:
 
-<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=SelectionSort.java"></script>
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=SelectionSortVisual.java"></script>
 
 <img src="../assets/fig/SelectionSortVisual.PNG" alt="Compile and Run SelectionSortVisual.java" style="height:800px">
 
