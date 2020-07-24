@@ -100,7 +100,7 @@ by looping through the list of states.
 > ## Code Comparison:
 > 
 > Explain the difference in output order from `DynamicStateAwards.java` and `ExtendedStateAwards.java`.
-> <img src="../assets/fig/Dynamic_Extended.png" alt="Side-by-side comparison between running DynamicStateAwards and ExtendedStateWards" style="height:500px">
+> <img src="../assets/fig/Dynamic_Extended.png" alt="Side-by-side comparison between running DynamicStateAwards and ExtendedStateWards" style="height:600px">
 
 > > ## Solution
 > > The difference is due to the order of data read. Hint: Think about how `DynamicStateAwards.java` goes through data lines, then insert state

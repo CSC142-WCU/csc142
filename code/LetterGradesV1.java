@@ -14,9 +14,9 @@ public class LetterGradesV1 {
       numGrades[i] = stdin.nextDouble();
     }
     System.out.println("NUMBER TO LETTER: ");
-    for (int i = 0; i < studentCount; i++) {
+    for (int i = 0; i < studentCount; i+=2) {
       grades[i] = "F";
-      for (int j = 0; j < numWCUPA.length; j++) {
+      for (int j = 0; j < numWCUPA.length; j+=2) {
         if (numGrades[i] >= numWCUPA[j]) {
           grades[i] = letterWCUPA[j];
           break;
