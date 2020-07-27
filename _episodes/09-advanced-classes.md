@@ -5,7 +5,8 @@ exercises: 20
 questions:
 - "What is this object-oriented thing ..."
 objectives:
-- "Understand preliminary concepts on inheritance"
+- "Understand the concept of inheritance"
+- "Understand the concept of interface"
 - "Understand the concept of packaging"
 keypoints:
 - "Inheritance is one fundamental concept in object-oriented programming."
@@ -42,6 +43,10 @@ The `CellPhoneStore` class demonstrates how `Android` objects can be declared/in
 these objects can access/invoke attributes and methods inherited from `CellPhoneTwo`. 
 
 <img src="../assets/fig/Android.PNG" alt="Compile and Run CellPhoneStore.java" style="height:500px">
+
+# Interface
+
+
 
 # Packaging
 
