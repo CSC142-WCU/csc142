@@ -6,10 +6,12 @@ questions:
 - "What is this object-oriented thing ..."
 objectives:
 - "Understand the concept of inheritance"
-- "Understand the concept of interface"
 - "Understand the concept of packaging"
+- "Understand the concept of abstract class and abstract method"
+- "Understand the concept of interface"
+
 keypoints:
-- "Inheritance is one fundamental concept in object-oriented programming."
+- "Inheritance, abstract classes and abstract methods, and interface are among the fundamental concepts in object-oriented programming."
 ---
 
 # Inheritance
@@ -43,10 +45,6 @@ The `CellPhoneStore` class demonstrates how `Android` objects can be declared/in
 these objects can access/invoke attributes and methods inherited from `CellPhoneTwo`. 
 
 <img src="../assets/fig/Android.PNG" alt="Compile and Run CellPhoneStore.java" style="height:500px">
-
-# Interface
-
-
 
 # Packaging
 
@@ -98,5 +96,67 @@ directory structure.
 
 <img src="../assets/fig/ClassFiles.PNG" alt="View files inside the store directory" style="height:500px">
 
+
+
+# Abstract classes and abstract methods
+
+> ## Abstract class:
+> - Cannot be instantiated, but other classes **extended** it. 
+> - An abstract class can serve as a superclass for other classes. 
+> 
+{: .callout}
+
+> ## Abstract method:
+> - Only has declaration and no method body (no `{}`).
+> - Is a method that appears in an abstract class and is expected to be overridden in 
+a subclass. Failure to do this will result in an error. 
+> - **Abstract methods cannot be private!**. This is because they are overridden in subclasses
+> , hence they are accessed outside of their original class (superclass) and therefore 
+> cannot be private. 
+{: .callout}
+
+Let's revisit the cell phone store analogy. It is intuitive to assume that no store 
+will sell a brandless CellPhone. Furthermore, it is also possible that each phone 
+company has its own way to throttle performance as battery life depreciates over time. 
+Perhaps due to differences in design, batter depreciation due to calling activities can
+also differ. 
+
+- Create a directory called `second_store`. 
+- Inside `store`, create a directory called `base`. Create `CellPhone.java` from the source
+code below in `base`.
+- `CellPhone` is an abstract class.
+- `callNumber` and `setCPUSpeed` are abstract methods of `CellPhone`. 
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=CellPhone.java"></script>
+
+
+- Inside `store`, create a directory called `fancy`. Create `Galaxy.java` and `iPhone.java` in `fancy` from the source codes below. 
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=Galaxy.java"></script>
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=iPhone.java"></script>
+
+> ## @Override:
+> - `Galaxy` and `iPhone` are subclasses of `CellPhone`.
+> - `Galaxy` and `iPhone` have to provide the actual implemtations of `callNumber` and `setCPUSpeed`, 
+> the abstract methods of `CellPhone`. The actual implementations differ between `Galaxy` and
+> `iPhone`. 
+> - The phrase `@Override` is placed on the line just above the declarations of `callNumber` 
+> and `setCPUSpeed` in `Galaxy` and `iPhone` to indicate that these are reimplamentation of abstract
+> methods. 
+{: .callout}
+
+- Inside store, create `SecondStore.java` from the source code below:
+
+<script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=SecondStore.java"></script>
+
+- While both `s3` and `X` perform the same number of calls, because `Galaxy`'s overriding 
+implementation of `callNumber` and `setCPUSpeed` differ from those of `iPhone`, the final 
+battery values also differ. 
+
+# Interface
+
+- Formal definition: An interface is a class that contains only abstract methods. 
+- An interface cannot be instantiated. It must be **implemented** by other classes. 
 
 {% include links.md %}
