@@ -16,9 +16,20 @@ public class TwoDims {
 
     for (int i = 0; i < 3; i++) {
       for (int j = 0; j < 3; j++) {
-          System.out.print(oneArray[j][i] + " ");
+          System.out.print(oneArray[i][j] + " ");
       }
       System.out.println("");
+    }
+
+
+    int indexCount = 0;
+    while (indexCount < 3) {
+      for (int j = 0; j < 3; j++) {
+          System.out.print(oneArray[indexCount][j] + " ");
+          
+      }
+      System.out.println("");
+      indexCount ++;
     }
 
   }
