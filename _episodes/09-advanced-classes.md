@@ -122,7 +122,7 @@ Perhaps due to differences in design, batter depreciation due to calling activit
 also differ. 
 
 - Create a directory called `second_store`. 
-- Inside `store`, create a directory called `base`. Create `CellPhone.java` from the source
+- Inside `second_store`, create a directory called `base`. Create `CellPhone.java` from the source
 code below in `base`.
 - `CellPhone` is an abstract class.
 - `callNumber` and `setCPUSpeed` are abstract methods of `CellPhone`. 
@@ -130,7 +130,7 @@ code below in `base`.
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=CellPhone.java"></script>
 
 
-- Inside `store`, create a directory called `fancy`. Create `Galaxy.java` and `iPhone.java` in `fancy` from the source codes below. 
+- Inside `second_store`, create a directory called `fancy`. Create `Galaxy.java` and `iPhone.java` in `fancy` from the source codes below. 
 
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=Galaxy.java"></script>
 
