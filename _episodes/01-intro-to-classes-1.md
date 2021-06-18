@@ -105,7 +105,7 @@ keypoints:
 >
 > <img src="../assets/fig/CellPhoneOneMain.png" alt="Compile and run CellPhoneOneMain" style="height:150px">
 >
-{:slide}
+{:.slide}
 
 
 > ## 6. Looking forward. 
