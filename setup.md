@@ -3,14 +3,59 @@ title: Setup
 ---
 
 > ## To do
-> To prepare for this course, the following tasks need to be carried out:
-> - Installation of Visual Studio Code (VSCode)
-> - Installation of Java
-> - Setup GitHub account
-> - Accepting first assignment in GitHub classroom.
+> 
+> This course requires access to a computing environment that:
+>
+> - Support Java 11. 
+> - Support Apache Maven 3+ (a software project management and comprehension tool). 
+> - Support Git/GitHub (version control system). 
+>
+> Two possible options are made available for this course:
+>
+> - You can utilize an online IDE/programming environment in [Replit](https://www.replit.com), or
+> - You can setup your own computing environment. 
+> 
+> In the remainder of this page, instructions will be provided for both accessing the 
+> online environment and setting up your own computing environment in Windows and Macs.
+> 
 {: .checklist}
 
-## Installation of Visual Studio Code
+
+### Creating a GitHub account
+
+Regardless of your computing environment, a GitHub account is required for this 
+course. 
+
+- If you don't have an existing GitHub account, go to 
+[GitHub's Page](https://github.com/) and register for an account with your WCUPA 
+email address. 
+- If you already have an existing GitHub account, go ahead and add your WCUPA email 
+address to your GitHub account as a secondary email. 
+
+
+## Accessing Replit Online Environment
+
+- Go to [Replit's Page](https://replit.com/) to sign up for an account. This is where
+you can link your GitHub account directly to Replit. This is a useful environment for 
+practicing your programming skills with other languages beyond Java. 
+- You will receive an invitation email from Replit to your WCUPA Email with the following contents:
+
+<img src="fig/setup/01.png" alt="Contents of email invitation to join Replit CSC 142 Team" style="height:450px">
+
+- If you don't see this email, you can check the spam filter of WCUPA. 
+- A direct link will also be provided inside D2L, under Contents/Online Resources. 
+- After joining the Replit Team for CSC142, the following page will appear:
+
+<img src="fig/setup/02.png" alt="Online page for CSC142's Replit page" style="height:600px">
+
+- Clicking on "Start Project" will create a Replit environment specific to that 
+Assignment, including an editor and a command line terminal. 
+
+<img src="fig/setup/03.png" alt="Example programming environment" style="height:1000px">
+
+
+
+
 
 Go to [Visual Studio Code's download page][vscode] and download the correct package for your computer (Windows, Mac OS, or Linux). 
 For Windows, you can download `User Installer 64-bit` version if you only want to install VSCode into your user account.  
