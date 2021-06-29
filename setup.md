@@ -6,9 +6,9 @@ title: Setup
 > 
 > This course requires access to a computing environment that:
 >
+> - Support Git/GitHub (version control system). 
 > - Support Java 11. 
 > - Support Apache Maven 3+ (a software project management and comprehension tool). 
-> - Support Git/GitHub (version control system). 
 >
 > In the remainder of this page, instructions will be provided for setting up your 
 > own computing environment in Windows and Macs.
