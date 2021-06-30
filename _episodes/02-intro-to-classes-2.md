@@ -187,7 +187,7 @@ This brings up a number of expanded definitions:
 >
 > - Similar to methods, attributes can also have a `static` flag. The existence of this flag 
 > means the attributes belong to the class definition itself, rather than instances of that class. 
-> This also means that `static` fields/attributes will potentially be shared/accessiable/
+> This also means that `static` fields/attributes will potentially be shared/accessible/
 > modifiable across instances of the parent class.  
 >
 {:.slide}

@@ -215,19 +215,8 @@ For Windows, you can download `User Installer 64-bit` version if you only want t
 > version of Maven. 
 >   - If you use Windows, download [apache-maven-3.8.1-bin.zip](https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.zip)
 >   - If you use Mac/Linux, download [apache-maven-3.8.1-bin.tar.gz]https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz) 
-> - Unzip the dowloaded files. 
-> - For Windows, unzip the downloaded file into your `C:` drive. 
+> - Follow the steps in [Apache Maven's Installation Guide](https://maven.apache.org/install.html)
 >
-> <img src="fig/setup/maven/01.png" style="height:500px">
->
-> - In the VS terminal, run the following command:
->  
-> ~~~
-> $ setx path "%path%;c:\apache-maven-3.8.1-bin\bin"
-> ~~~
-> {: .language-bash}
->
-
 {:.slide}
 
 
