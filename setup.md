@@ -199,16 +199,35 @@ For Windows, you can download `User Installer 64-bit` version if you only want t
 > - We can validate this installation via the terminal in VSCode, 
 >   - Open a new terminal in VSCode or relaunch VSCode. 
 > - Run the following command:
-> <img src="fig/setup/openjdk/08.png" style="height:450px">
+> <img src="fig/setup/openjdk/08.png" style="height:300px">
 >
 {:.slide}
 
 
-> ## Install Maven
-> Follows the installation steps described in [Gradle's documentation page](https://docs.gradle.org/current/userguide/installation.html) 
-> to install and setup gradle. 
-> <img src="assets/fig/gradle.png" alt="Test for gradle in VSCode's terminal" style="height:350px">
+> ## 6. Install Maven (Windows)
+> 
+> > ## Mac and Linux:
+> > - For Mac, you can use `Homebrew` to install maven: https://formulae.brew.sh/formula/maven
+> > - For Linux, depending on your distros, you can use `yum`/`dnf`/`apt-get` to install `maven`. 
+> {:.checklist}
 >
+> - Go to [Apache Maven's Project Page](https://maven.apache.org/download.cgi) and download the appropriate
+> version of Maven. 
+>   - If you use Windows, download [apache-maven-3.8.1-bin.zip](https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.zip)
+>   - If you use Mac/Linux, download [apache-maven-3.8.1-bin.tar.gz]https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz) 
+> - Unzip the dowloaded files. 
+> - For Windows, unzip the downloaded file into your `C:` drive. 
+>
+> <img src="fig/setup/maven/01.png" style="height:500px">
+>
+> - In the VS terminal, run the following command:
+>  
+> ~~~
+> $ setx path "%path%;c:\apache-maven-3.8.1-bin\bin"
+> ~~~
+> {: .language-bash}
+>
+
 {:.slide}
 
 
