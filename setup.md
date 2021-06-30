@@ -30,29 +30,67 @@ title: Setup
 {: .slide}
 
 
-> ## 2. Your terminal
+> ## 2. Install VSCode
 >
+> Go to [Visual Studio Code's download page][vscode] and download the correct package for your computer (Windows, Mac OS, or Linux). 
+For Windows, you can download `User Installer 64-bit` version if you only want to install VSCode into your user account. 
 > 
-{: .slide}
+> <img src="fig/setup/vscode/01.png" style="height:450px">
+> <img src="fig/setup/vscode/02.png" style="height:450px">
+> <img src="fig/setup/vscode/03.png" style="height:450px">
+> <img src="fig/setup/vscode/04.png" style="height:450px">
+> <img src="fig/setup/vscode/05.png" style="height:450px">
+> <img src="fig/setup/vscode/06.png" style="height:450px">
+> <img src="fig/setup/vscode/07.png" style="height:450px">
+> <img src="fig/setup/vscode/08.png" style="height:450px">
+{:.slide}
 
 
-## 2. Create a GitHub account
+> ## 3. Install Git
+>
+> - Go to [Git's download page](https://git-scm.com/downloads) and select the appropriate download
+> for your operating system. 
+> - The remainder of this slide uses Windows as a demonstration, but the Mac's installation steps 
+> will be similar. 
+> - Double-click on the downloaded file to launch the installer. 
+> - Read through the GNU Public License and click Next
+> <img src="fig/setup/git/01.png" style="height:450px">
+>
+> - Review the default installation location and click Next
+> <img src="fig/setup/git/02.png" style="height:450px">
+>
+> - Confirm the select components match as shown in the screenshot below:
+> <img src="fig/setup/git/03.png" style="height:450px">
+> 
+> <img src="fig/setup/git/04.png" style="height:450px">
+> <img src="fig/setup/git/05.png" style="height:450px">
+> <img src="fig/setup/git/06.png" style="height:450px">
+> <img src="fig/setup/git/07.png" style="height:450px">
+> <img src="fig/setup/git/08.png" style="height:450px">
+> <img src="fig/setup/git/09.png" style="height:450px">
+> <img src="fig/setup/git/10.png" style="height:450px">
+> <img src="fig/setup/git/11.png" style="height:450px">
+> <img src="fig/setup/git/12.png" style="height:450px">
+> <img src="fig/setup/git/13.png" style="height:450px">
+> <img src="fig/setup/git/14.png" style="height:450px">
+> <img src="fig/setup/git/15.png" style="height:450px">
+> <img src="fig/setup/git/16.png" style="height:450px">
+> 
+{:.slide}
 
-Regardless of your computing environment, a GitHub account is required for this 
-course. 
 
-- If you don't have an existing GitHub account, go to 
-[GitHub's Page](https://github.com/) and register for an account with your WCUPA 
-email address. 
-- If you already have an existing GitHub account, go ahead and add your WCUPA email 
-address to your GitHub account as a secondary email. 
-
-
-Go to [Visual Studio Code's download page][vscode] and download the correct package for your computer (Windows, Mac OS, or Linux). 
-For Windows, you can download `User Installer 64-bit` version if you only want to install VSCode into your user account.  
-
-## Installation of Java
-
+> ## 4. Install Java
+>
+> <img src="fig/setup/openjdk/01.png" style="height:450px">
+> <img src="fig/setup/openjdk/02.png" style="height:450px">
+> <img src="fig/setup/openjdk/03.png" style="height:450px">
+> <img src="fig/setup/openjdk/04.png" style="height:450px">
+> <img src="fig/setup/openjdk/05.png" style="height:450px">
+> <img src="fig/setup/openjdk/06.png" style="height:450px">
+> <img src="fig/setup/openjdk/07.png" style="height:450px">
+> <img src="fig/setup/openjdk/08.png" style="height:450px">
+>
+{:.slide}
 It is most likely that you already have Java installed. To confirm this, first,
 open a terminal in VSCode by select **Terminal/New Terminal** on the top Menu bar. 
 
