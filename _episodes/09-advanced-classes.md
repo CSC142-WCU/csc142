@@ -44,7 +44,7 @@ This will initialize the attributes that this `Android` object inherits from `Ce
 The `CellPhoneStore` class demonstrates how `Android` objects can be declared/instantiated and how 
 these objects can access/invoke attributes and methods inherited from `CellPhoneTwo`. 
 
-<img src="../assets/fig/Android.PNG" alt="Compile and Run CellPhoneStore.java" style="height:500px">
+<img src="../fig/advanced/Android.PNG" alt="Compile and Run CellPhoneStore.java" style="height:500px">
 
 # Packaging
 
@@ -72,7 +72,7 @@ import store.base.CellPhoneTwo;
 package store.base;
 ```
 
-<img src="../assets/fig/SetupPackages.PNG" alt="Create directory structures" style="height:400px">
+<img src="../fig/advanced/SetupPackages.PNG" alt="Create directory structures" style="height:400px">
 
 > ## Directory structures:
 > - The keyword `package` represents the location within the directory structure
@@ -88,13 +88,13 @@ $ javac store/CellPhoneStore.java
 $ java store/CellPhoneStore
 ```
 
-<img src="../assets/fig/CompileRunPackage.PNG" alt="Compile and run packaged CellPhoneStore.java" style="height:400px">
+<img src="../fig/advanced/CompileRunPackage.PNG" alt="Compile and run packaged CellPhoneStore.java" style="height:400px">
 
 
 - Navigate `store` and you will see the class files being created in the corresponding
 directory structure. 
 
-<img src="../assets/fig/ClassFiles.PNG" alt="View files inside the store directory" style="height:400px">
+<img src="../fig/advanced/ClassFiles.PNG" alt="View files inside the store directory" style="height:400px">
 
 
 

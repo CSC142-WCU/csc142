@@ -145,7 +145,7 @@ the source code of `LetterGradesV1.java`.
 
 The figure below shows the compiling and running process for `LetterGradesV1.java`. 
 
-<img src="../assets/fig/LetterGradesV1.png" alt="Compile and run LetterGradesV1" style="height:350px">
+<img src="../fig/arrays-01/LetterGradesV1.png" alt="Compile and run LetterGradesV1" style="height:350px">
 
 {% include links.md %}
 

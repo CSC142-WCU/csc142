@@ -33,7 +33,7 @@ $ java CLA golden rams wcupa university
 
 The outcomes of the aboev runs are presented in the figure below:
 
-<img src="../assets/fig/CLA.png" alt="Compile and run CLA.java" style="height:300px">
+<img src="../fig/arrays-03/CLA.png" alt="Compile and run CLA.java" style="height:300px">
 
 - With `java CLA`, there is no command line arguments. 
 - With `java CLA rams`, there is one command line argument: `rams`. 
@@ -48,7 +48,7 @@ shown in `CLA_Math.java`.
 In the example runs below, when a command line argument is in the double format, `CLA_Math` throws a `NumberFormatException`, 
 which means that we seem to try to parse a String formatted as **double** into an **int**. 
 
-<img src="../assets/fig/CLA_Math.png" alt="Compile and run CLA_Math.java" style="height:300px">
+<img src="../fig/arrays-03/CLA_Math.png" alt="Compile and run CLA_Math.java" style="height:300px">
 
 # Variable-Length Arguments
 
@@ -58,7 +58,7 @@ in method declaration.
 
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=VarArgs.java"></script>
 
-<img src="../assets/fig/VarArgs.png" alt="Compile and run VarArgs.java" style="height:300px">
+<img src="../fig/arrays-03/VarArgs.png" alt="Compile and run VarArgs.java" style="height:300px">
 
 Variable-length arguments are to be used in cases where one does not know how many arguments will be provided 
 to the method call. In this case, we can either go with **overloading** (which could lead to a lot of codes) or 
@@ -100,7 +100,7 @@ by looping through the list of states.
 > ## Code Comparison:
 > 
 > Explain the difference in output order from `DynamicStateAwards.java` and `ExtendedStateAwards.java`.
-> <img src="../assets/fig/Dynamic_Extended.png" alt="Side-by-side comparison between running DynamicStateAwards and ExtendedStateWards" style="height:600px">
+> <img src="../fig/arrays-03/Dynamic_Extended.png" alt="Side-by-side comparison between running DynamicStateAwards and ExtendedStateWards" style="height:600px">
 
 > > ## Solution
 > > The difference is due to the order of data read. Hint: Think about how `DynamicStateAwards.java` goes through data lines, then insert state

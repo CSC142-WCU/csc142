@@ -46,7 +46,7 @@ definition of payment is implied due to the nature of the method's arguments. We
 
 The compilation and running of `Grocery.java` is shown below. 
 
-<img src="../assets/fig/overloading1.png" alt="Compiling and running Grocery.java" style="height:300px">
+<img src="../fig/intro-03/overloading1.png" alt="Compiling and running Grocery.java" style="height:300px">
 
 Overloading is applicable for **constructors** as well. For example, in [the API of the Scanner class webpage](https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html#constructor.summary), we can see how different Scanner objects can be instantiated/constructed using 
 different constructors, each of which depends on the source being scanned. 

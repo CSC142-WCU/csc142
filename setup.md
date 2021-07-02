@@ -204,13 +204,13 @@ For Windows, you can download `User Installer 64-bit` version if you only want t
 {:.slide}
 
 
-> ## 6. Install Maven (Windows)
+> ## 6. Install Maven
 > 
-> > ## Mac and Linux:
-> > - For Mac, you can use `Homebrew` to install maven: https://formulae.brew.sh/formula/maven
-> > - For Linux, depending on your distros, you can use `yum`/`dnf`/`apt-get` to install `maven`. 
-> {:.checklist}
->
+> ### Mac and Linux:
+> - For Mac, you can use `Homebrew` to install maven: https://formulae.brew.sh/formula/maven
+> - For Linux, depending on your distros, you can use `yum`/`dnf`/`apt-get` to install `maven`. 
+> 
+> ### Windows:
 > - Go to [Apache Maven's Project Page](https://maven.apache.org/download.cgi) and download the appropriate
 > version of Maven. 
 >   - If you use Windows, download [apache-maven-3.8.1-bin.zip](https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.zip)

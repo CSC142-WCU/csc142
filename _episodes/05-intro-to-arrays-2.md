@@ -61,7 +61,7 @@ extract information about Shakespeare's work, and classify individual work into 
 In running the above code, besides creating the `ParseAwards.java` file, we must also download [Awards_CISE_2019.csv][awards-cise-2019] and store this 
 file in the same directory as the Java file. 
 
-<img src="../assets/fig/parseAwards.png" alt="Viewing data and source code for ParseAwards.java and then compile and run" style="height:500px">
+<img src="../fig/arrays-02/parseAwards.png" alt="Viewing data and source code for ParseAwards.java and then compile and run" style="height:500px">
 
 > ## Code Correction:
 > 
@@ -117,7 +117,7 @@ Intead of using an array of Strings to store only the partial links to the indiv
 
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=ExtendedStateAwards.java"></script>
 
-<img src="../assets/fig/ExtendedStateAwards.png" alt="Compile and run ExtendedStateAwards.java" style="height:500px">
+<img src="../fig/arrays-02/ExtendedStateAwards.png" alt="Compile and run ExtendedStateAwards.java" style="height:500px">
 
 
 > ## Code Reading Practice:
@@ -156,7 +156,7 @@ An example of a simple two-dimensional array is shown in `TwoDims.java`.
 
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=TwoDims.java"></script>
 
-<img src="../assets/fig/TwoDims.png" alt="Compile and run TwoDims.java" style="height:300px">
+<img src="../fig/arrays-02/TwoDims.png" alt="Compile and run TwoDims.java" style="height:300px">
 
 > ## Code Modifiction Practice:
 > 
@@ -178,7 +178,7 @@ An example of a simple two-dimensional array is shown in `TwoDims.java`.
 > {: .solution}
 {: .challenge}
 
-<img src="../assets/fig/SimpleStateAwards.png" alt="Compile and run SimpleStateAwards.java" style="height:500px">
+<img src="../fig/arrays-02/SimpleStateAwards.png" alt="Compile and run SimpleStateAwards.java" style="height:500px">
 
            
 {% include links.md %}

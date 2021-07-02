@@ -30,9 +30,9 @@ until a specified contition is met at which time the rest of each repetition is 
 
 The visual of `Exams.java`'s recursive `keepAndPass` call can be seen below:
 
-<img src="../assets/fig/Exams.PNG" alt="Compile and run Exams.java" style="height:400px">
+<img src="../fig/recursion/Exams.PNG" alt="Compile and run Exams.java" style="height:400px">
 
-<img src="../assets/fig/Exams_diagram.png" alt="Visual demonstration of keepAndPass recursive calls" style="height:700px">
+<img src="../fig/recursion/Exams_diagram.png" alt="Visual demonstration of keepAndPass recursive calls" style="height:700px">
 
 > ## Approach to solve a problem recursively:
 > - Carry out a few steps of the intended task and identify if
@@ -47,6 +47,6 @@ The visual of `Exams.java`'s recursive `keepAndPass` call can be seen below:
 - Calculate an arithmetic series. 
 - Binary search. 
 
-<img src="../assets/fig/recursive.PNG" alt="Visual examination of recursive examples" style="height:900px">
+<img src="../fig/recursion/recursive.PNG" alt="Visual examination of recursive examples" style="height:900px">
 
 {% include links.md %}

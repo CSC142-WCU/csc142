@@ -47,13 +47,13 @@ in an array, this is called **selection sort**.
 
 The outcome of this sorting technique is shown below:
 
-<img src="../assets/fig/SelectionSort.PNG" alt="Compile and Run SelectionSort.java" style="height:300px">
+<img src="../fig/arrays-04/SelectionSort.PNG" alt="Compile and Run SelectionSort.java" style="height:300px">
 
 To see how this works, `SelectionSort.java` is modified inton `SelectionSortVisual.java`:
 
 <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=SelectionSortVisual.java"></script>
 
-<img src="../assets/fig/SelectionSortVisual.PNG" alt="Compile and Run SelectionSortVisual.java" style="height:800px">
+<img src="../fig/arrays-04/SelectionSortVisual.PNG" alt="Compile and Run SelectionSortVisual.java" style="height:800px">
 
 
 # Binary Search

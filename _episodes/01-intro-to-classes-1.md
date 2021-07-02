@@ -24,7 +24,7 @@ keypoints:
 > an **object** and will be instantiated from the descriptions written in the class code. Another 
 > term instead of **object** is **instance**. 
 > 
-> <img src="../assets/fig/class_object.png" alt="Analogy about the relationship between class and object: a phone hardware diagram and the actual phones" style="height:450px">
+> <img src="../fig/intro-01/class_object.png" alt="Analogy about the relationship between class and object: a phone hardware diagram and the actual phones" style="height:450px">
 >
 {:.slide}
 
@@ -87,7 +87,7 @@ keypoints:
 >
 > <script src="https://gist.github.com/linhbngo/d4dcf56c9d764b7f444e1452fcddc045.js?file=CellPhoneOne.java"></script>
 >
-> <img src="../assets/fig/CellPhoneOne.png" alt="Compile and run CellPhoneOne" style="height:100px">
+> <img src="../fig/intro-01/CellPhoneOne.png" alt="Compile and run CellPhoneOne" style="height:100px">
 >
 > - This next source code,  called `CellPhoneOneMain.java` will declare, instantiate, and 
 > manipulate an object of type `CellPhoneOne`. 
@@ -103,7 +103,7 @@ keypoints:
 > directory, and the compilation process will create the `.class` files for both. You can now call 
 > `java CellPhoneOneMain` and see the only output resulting from `callNumber`. 
 >
-> <img src="../assets/fig/CellPhoneOneMain.png" alt="Compile and run CellPhoneOneMain" style="height:150px">
+> <img src="../fig/intro-01/CellPhoneOneMain.png" alt="Compile and run CellPhoneOneMain" style="height:150px">
 >
 {:.slide}
 

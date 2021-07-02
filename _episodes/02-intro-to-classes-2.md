@@ -75,6 +75,7 @@ This brings up a number of expanded definitions:
 > - A **constructor** is a special method that is called when an object of a class is created/
 > instantiated. 
 > - The constructor contains codes that help initializing the object's attributes. 
+{:.slide}
 
 > ## 3. Example of a constructor
 > 
@@ -146,7 +147,7 @@ This brings up a number of expanded definitions:
 > - The figure below presents the steps to compile and run `CellPhoneTwoMain.java` and the 
 > resulting outcomes. 
 >
-> <img src="../assets/fig/CellPhoneTwo.png" alt="Compiling and running CellPhoneTwoMain.java" style="height:300px">
+> <img src="../fig/intro-02/CellPhoneTwo.png" alt="Compiling and running CellPhoneTwoMain.java" style="height:300px">
 >
 {:.slide}
 
@@ -164,7 +165,7 @@ This brings up a number of expanded definitions:
 > > are two errors reported since we try this direct access approach twice. From the screenshot, you can see how the 
 > > error indicators show two different errors on the same line (line 11).
 > >
-> >  <img src="../assets/fig/CellPhoneTwoWrong.png" alt="Compiling and running CellPhoneTwoMainWrong.java" style="height:600px">
+> >  <img src="../fig/intro-02/CellPhoneTwoWrong.png" alt="Compiling and running CellPhoneTwoMainWrong.java" style="height:600px">
 > >  
 > {: .solution}
 {: .challenge}
